@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/acceuil.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div>
+      <button id="spin">Spin</button>
+      <span class="arrow"> </span>
+      <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+      </div>
+    </div> -->
+
+    <div class="Header">
+      <h2>TIRAGE AU SORT</h2>
+    </div>
+
+    <div class="all-page">
+      <div class="form">
+        <label style="margin-bottom: 10px; font-size: 17px" for="start"
+          >Start date:</label
+        >
+
+        <input type="date" id="date" />
+        <div class="part1">
+          <input type="text" id="nameValue" placeholder=" name" value="" />
+          <input
+            type="text"
+            id="sujetValue"
+            placeholder=" sujet de veille"
+            value=""
+          />
+          <button class="add-learner" OnClick="addLearner()">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+
+        <div class="container-learners" id="container-learners"></div>
+
+        <div class="container-button-spinner">
+          <button class="start-spinner" OnClick="startSpinner()">
+            Start Now
+          </button>
+        </div>
+      </div>
+      <!-- <div class="space3">
+        <p>Result :</p>
+        <div class="result"></div>
+      </div> -->
+
+      <div class="space2">
+        <div class="content">
+          <div id="content"></div>
+        </div>
+        <div class="part-buttons">
+          <button class="start-spinner" OnClick="clearList()">
+            Clear list
+          </button>
+          <button class="start-spinner" OnClick="downloadList()">
+            download
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- model -->
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <div class="modal-header">
+          <h2>Selected</h2>
+        </div>
+        <div class="modal-body">
+          <h2 class="space-learner">rafik</h2>
+        </div>
+        <div class="modal-footer">
+          <button class="start-spinner">remove</button>
+          <button class="start-spinner" OnClick="startSpinner()">
+            spin Again
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script
+    src="https://kit.fontawesome.com/756f1fbb0c.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="js/acceuil.js"></script>
+</html>
